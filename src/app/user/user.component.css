@@ -8,12 +8,16 @@
     border-radius: 10px;
 }
 h2{
-    padding-top: 30px;
+    padding-top: 20px;
 }
 h5{
     color: white;
     font-family: 'Lobster', cursive;
 }
 .in{
-    padding-top: 50px;
+    padding-top: 40px;
+}
+img {
+    width: 200px;
+    border-radius: 30px;
 }
