@@ -5,9 +5,9 @@
           style="background-image: url(https://img4.goodfon.com/wallpaper/nbig/b/8f/nemetskaia-ovcharka-sobaka-morda-profil-osheinik-portret-fon.jpg);">
           <h2 class="text-center"><i class="fa fa-github" aria-hidden="true"></i>GITHUB SEARCH</h2>
           <div class="text-center search">
-            <input type="text" name="" id="search" placeholder="user name">
-            <button type="button" class="btn btn-outline-secondary"><i class="fa fa-search"
-                aria-hidden="true"></i>Search</button>
+            
+            <app-form (emittextsearch)="usersearch($event)"></app-form>
+              
 
 
 
@@ -17,29 +17,38 @@
 
               <div class="col-sm-3">
                 <p><b style="font-family: 'Times New Roman', Times, serif;color: black;">Name</b>:
-
+                  
+                  <span>{{user.name}}</span>
                 </p>
                 <p appStrikethrough><b style="font-family: 'Times New Roman', Times, serif;color: black;">Username</b>:
-
+                  <span style="color: white;font-family: 'Kaushan Script', cursive;font-size: 20px;">{{user.login}}</span>
 
                 </p>
+                <img src="{{user.avatar_url}}" alt="">
 
               </div>
               <div class="col">
 
                 <p appStrikethrough><b style="font-family: 'Times New Roman', Times, serif;color: black;">Year</b>:
-
+                  
+                  <span style="color: white;font-weight: bold;font-family: 'Kaushan Script', cursive;font-size: 20px;">{{user.created_at |date}}</span>
 
                 </p>
 
                 <p appStrikethrough><b style="font-family: 'Times New Roman', Times, serif;color: black;">Followers</b>:
+                  <span
+                    style="color: white;font-weight: bold;font-family: 'Kaushan Script', cursive;font-size: 20px;">{{user.followers}}</span>
 
                 </p>
                 <p appStrikethrough><b style="font-family: 'Times New Roman', Times, serif;color: black;">Following</b>:
+                  <span
+                    style="color: white;font-weight: bold;font-family: 'Kaushan Script', cursive;font-size: 20px;">{{user.following}}</span>
 
                 </p>
                 <p appStrikethrough><b
                     style="font-family: 'Times New Roman', Times, serif;color: black;">Repositories</b>:
+                    <span style="color: white;font-family: 'Kaushan Script', cursive;font-size: 20px;">{{user.public_repos}}
+                    </span>
 
 
               </div>
