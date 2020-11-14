@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<div class="card text-center">
+    <!-- <div class="card-header">
+      <ul class="nav nav-pills card-header-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div> -->
+    <div class="card-body back" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/162/161/312/autumn-each-dog-hd-wallpaper-preview.jpg);">
+      <h2 class="text-center">VIEW YOUR REPOSITORY</h2>
+      <app-form (emittextsearch)="reposearch($event)"></app-form>
+      
+
+      <div class="myrepo">
+        <div class="card" *ngFor="let repo of repository" class="card m-2" style="width: 22rem;" class="hello">
+            <div class="card-body">
+                <h5 class="card-title">Repo Name:{{repo.name}} </h5>
+                <hr>
+                <div class="card-text">
+                    <p>Description :{{repo.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+  </div>
+</body>
+</html>
