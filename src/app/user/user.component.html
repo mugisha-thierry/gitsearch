@@ -1,13 +1,13 @@
 <div class="row">
-    <div class="col-sm-9 card1">
-      <div class="card">
-        <div class="card-body"
-          style="background-image: url(https://img4.goodfon.com/wallpaper/nbig/b/8f/nemetskaia-ovcharka-sobaka-morda-profil-osheinik-portret-fon.jpg);">
-          <h2 class="text-center"><i class="fa fa-github" aria-hidden="true"></i>GITHUB SEARCH</h2>
-          <div class="text-center search">
-            
-            <app-form (emittextsearch)="usersearch($event)"></app-form>
-              
+  <div class="col-sm-9 card1">
+    <div class="card">
+      <div class="card-body"
+        style="background-image: url(https://img4.goodfon.com/wallpaper/nbig/b/8f/nemetskaia-ovcharka-sobaka-morda-profil-osheinik-portret-fon.jpg);">
+        <h2 class="text-center"><i class="fa fa-github" aria-hidden="true"></i>GITHUB SEARCH</h2>
+        <div class="text-center search">
+
+          <app-form (emittextsearch)="usersearch($event)"></app-form>
+
 
 
 
@@ -16,12 +16,12 @@
               <div class="col-sm-2"></div>
 
               <div class="col-sm-3">
-                <p><b style="font-family: 'Times New Roman', Times, serif;color: black;">Name</b>:
-                  
-                  <span>{{user.name}}</span>
+                <p appStyling><b style="color: black;">Name</b>:
+
+                  <span style="font-weight: bold;">{{user.name}}</span>
                 </p>
-                <p appStrikethrough><b style="font-family: 'Times New Roman', Times, serif;color: black;">Username</b>:
-                  <span style="color: white;font-family: 'Kaushan Script', cursive;font-size: 20px;">{{user.login}}</span>
+                <p appStyling><b style="color: black;">Username</b>:
+                  <span style="color: white;font-weight: bold;font-size: 20px;">{{user.login}}</span>
 
                 </p>
                 <img src="{{user.avatar_url}}" alt="">
@@ -29,26 +29,23 @@
               </div>
               <div class="col">
 
-                <p appStrikethrough><b style="font-family: 'Times New Roman', Times, serif;color: black;">Year</b>:
-                  
-                  <span style="color: white;font-weight: bold;font-family: 'Kaushan Script', cursive;font-size: 20px;">{{user.created_at |date}}</span>
+                <p appStyling><b style="color: black;">Year</b>:
+
+                  <span style="color: white;font-weight: bold;font-size: 20px;">{{user.created_at |date}}</span>
 
                 </p>
 
-                <p appStrikethrough><b style="font-family: 'Times New Roman', Times, serif;color: black;">Followers</b>:
-                  <span
-                    style="color: white;font-weight: bold;font-family: 'Kaushan Script', cursive;font-size: 20px;">{{user.followers}}</span>
+                <p appStyling><b style="color: black;">Followers</b>:
+                  <span style="color: white;font-weight: bold;font-size: 20px;">{{user.followers}}</span>
 
                 </p>
-                <p appStrikethrough><b style="font-family: 'Times New Roman', Times, serif;color: black;">Following</b>:
-                  <span
-                    style="color: white;font-weight: bold;font-family: 'Kaushan Script', cursive;font-size: 20px;">{{user.following}}</span>
+                <p appStyling><b style="color: black;">Following</b>:
+                  <span style="color: white;font-weight: bold;font-size: 20px;">{{user.following}}</span>
 
                 </p>
-                <p appStrikethrough><b
-                    style="font-family: 'Times New Roman', Times, serif;color: black;">Repositories</b>:
-                    <span style="color: white;font-family: 'Kaushan Script', cursive;font-size: 20px;">{{user.public_repos}}
-                    </span>
+                <p appStyling><b style="color: black;">Repositories</b>:
+                  <span style="color: white;font-weight: bold;font-size: 20px;">{{user.public_repos}}
+                  </span>
 
 
               </div>
@@ -65,7 +62,7 @@
     <div class="card">
       <div class="card-body yes"
         style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJ58kTbeZIQB6TMPif2-WqrrUqXbUv3qhXDA&usqp=CAU);">
-        <h5 class="card-title" class="text-center">QUOTES</h5>
+        <h5 class="card-title" class="text-center" appStyling>QUOTES</h5>
         <ul>
           <li style="color:white">
             <p class="card-text quote" class="text-center">One day the people that don’t even believe in you will tell
@@ -77,12 +74,14 @@
             <h6 class="card-subtitle mb-2 text-muted">Eileen McDargh</h6>
           </li>
           <li style="color:white">
-            <p class="card-text quote" class="text-center">There is only one way to happiness and that is to cease worrying about things which are beyond the power of our will
-              </p>
+            <p class="card-text quote" class="text-center">There is only one way to happiness and that is to cease
+              worrying about things which are beyond the power of our will
+            </p>
             <h6 class="card-subtitle mb-2 text-muted">Epictetus</h6>
           </li>
           <li style="color:white">
-            <p class="card-text quote" class="text-center">Happiness is not something ready-made. It comes from your own actions.
+            <p class="card-text quote" class="text-center">Happiness is not something ready-made. It comes from your own
+              actions.
             </p>
             <h6 class="card-subtitle mb-2 text-muted">Dalai Lama</h6>
           </li>
@@ -95,4 +94,4 @@
       </div>
     </div>
   </div>
-  </div>
+</div>
