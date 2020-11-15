@@ -1,3 +1,29 @@
 h2{
     color: white;
+    padding-top: 40px;
+    font-family: 'Courgette', cursive;
+}
+.hy{
+    padding-top: 40px;
+}
+
+.card{
+    width: 320px;
+    padding: 20px;
+    background-color: rgba(245, 241, 237, 0.377);
+  }
+  
+.card-title > p{
+  font-size: 18px;
+}
+.first{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.second{
+  background-color:rgba(37, 35, 35, 0.219);
+  color:white;
+  margin-bottom: 2%;
+  
 }
