@@ -1,1 +1,6 @@
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+body{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/162/161/312/autumn-each-dog-hd-wallpaper-preview.jpg);
+    background-size: 100% ; 
+    background-position: cover;   
+}
