@@ -7,7 +7,7 @@ This project allows a user to search for public repository on github by insertin
 ---
 ---
 This is the link to the project:
-https://mugisha-thierry.github.io/quote/
+https://mugisha-thierry.github.io/gitsearch/
 ## Author
 MUGISHA Thierry student from Moringa School
 ---
