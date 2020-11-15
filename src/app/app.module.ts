@@ -10,6 +10,7 @@ import { UserComponent } from './user/user.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RepoComponent } from './repo/repo.component';
 import { FormComponent } from './form/form.component';
+import { StylingDirective } from './styling.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormComponent } from './form/form.component';
     UserComponent,
     NavbarComponent,
     RepoComponent,
-    FormComponent
+    FormComponent,
+    StylingDirective
   ],
   imports: [
     BrowserModule,
